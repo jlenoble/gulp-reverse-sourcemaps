@@ -2,7 +2,7 @@
   "name": "gulp-reverse-sourcemaps",
   "description": "Takes in files with sourcemaps comments, outputs the original",
   "version": "0.1.0",
-  "keywords": [],
+  "keywords": ["gulpplugin", "gulp", "sourcemaps", "reverse"],
   "author": {
     "name": "Jason Lenoble",
     "email": "jason.lenoble@gmail.com"
