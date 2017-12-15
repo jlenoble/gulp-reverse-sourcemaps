@@ -1,0 +1,7 @@
+{
+  "build": "README.md",
+  "files": ["docs/index.md"],
+  "tableOfContents": {
+    "heading": "# gulp-reverse-sourcemaps\n\nTakes in files with sourcemaps comments, outputs the original"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "generator-wupjs": {
+    "devDeps": {
+      "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+      "plumb-gulp": "*",
+      "autoreload-gulp": "*",
+      "gulp-sourcemaps": "*",
+      "del": "*",
+      "gulp-rename": "*",
+      "gulp-replace": "*",
+      "gulp-wrap": "*",
+      "markdown-include": "*",
+      "chai": "*",
+      "babel-preset-es2015": "*",
+      "babel-plugin-add-module-exports": "*",
+      "gulp-babel": "*",
+      "gulp-eslint": "*",
+      "eslint-config-google": "*",
+      "gulp-mocha": "*",
+      "muter": "*"
+    },
+    "genVersion": "0.3.1",
+    "updated": "2017-12-15T12:27:22.548Z",
+    "created": "2017-12-15T12:27:22.548Z",
+    "version": "0.0.0",
+    "contributors": [],
+    "keywords": [],
+    "deps": {},
+    "peerDeps": {},
+    "name": "gulp-reverse-sourcemaps",
+    "description": "Takes in files with sourcemaps comments, outputs the original",
+    "author": "Jason Lenoble",
+    "email": "jason.lenoble@gmail.com",
+    "github": "jlenoble",
+    "preprocessors": [],
+    "license": "MIT",
+    "babel": "es2015",
+    "linters": [
+      "EsLint"
+    ],
+    "addons": [],
+    "testRunners": [
+      "Mocha"
+    ]
+  }
+}
