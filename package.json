@@ -24,7 +24,13 @@
     "url": "https://github.com/jlenoble/gulp-reverse-sourcemaps/issues"
   },
   "homepage": "https://github.com/jlenoble/gulp-reverse-sourcemaps#readme",
-  "dependencies": {},
+  "dependencies": {
+    "convert-source-map": "^1.5.1",
+    "gulp-util": "^3.0.8",
+    "source-map": "^0.6.1",
+    "through2": "^2.0.3",
+    "vinyl": "^2.1.0"
+  },
   "devDependencies": {
     "autoreload-gulp": "*",
     "babel-core": "^6.26.0",
@@ -32,6 +38,7 @@
     "babel-preset-env": "^1.6.1",
     "chai": "*",
     "del": "*",
+    "destglob": "^0.1.4",
     "eslint-config-google": "*",
     "gulp": "git://github.com/gulpjs/gulp.git#4.0",
     "gulp-babel": "*",
@@ -43,7 +50,9 @@
     "gulp-wrap": "*",
     "markdown-include": "*",
     "muter": "*",
-    "plumb-gulp": "*"
+    "plumb-gulp": "*",
+    "polypath": "^0.5.0",
+    "test-gulp-process": "^0.4.2"
   },
   "peerDependencies": {}
 }
