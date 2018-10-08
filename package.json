@@ -1,7 +1,7 @@
 {
   "name": "gulp-reverse-sourcemaps",
   "description": "Takes in files with sourcemaps comments, outputs the original",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "gulpplugin",
     "gulp",
