@@ -23,25 +23,30 @@ export default function reverse (sourceRoot) {
       const input = file.contents.toString(encoding);
       const converter = convert.fromSource(input);
 
-      if (converter !== null) {
-        const consumer = new sourceMap.SourceMapConsumer(converter.toJSON());
+      const consume = async () => {
+        if (converter !== null) {
+          const consumer = await new sourceMap.SourceMapConsumer(
+            converter.toJSON());
 
-        if (consumer.hasContentsOfAllSources()) {
-          consumer.sources.forEach(source => {
-            const content = consumer.sourceContentFor(source);
-            const newFile = new File({
-              path: sourceRoot ? path.join(sourceRoot, source) : source,
-              contents: new Buffer(content),
+          if (consumer.hasContentsOfAllSources()) {
+            consumer.sources.forEach(source => {
+              const content = consumer.sourceContentFor(source);
+              const newFile = new File({
+                path: sourceRoot ? path.join(sourceRoot, source) : source,
+                contents: new Buffer(content),
+              });
+
+              this.push(newFile); // eslint-disable-line no-invalid-this
             });
 
-            this.push(newFile); // eslint-disable-line no-invalid-this
-          });
-
-          return done();
+            return done();
+          }
         }
-      }
 
-      return done(null, file);
+        return done(null, file);
+      };
+
+      consume();
     }
   });
 }
