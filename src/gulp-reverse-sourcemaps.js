@@ -39,7 +39,10 @@ export default function reverse (sourceRoot) {
               this.push(newFile); // eslint-disable-line no-invalid-this
             });
 
+            consumer.destroy();
             return done();
+          } else {
+            consumer.destroy();
           }
         }
 
